@@ -30,19 +30,12 @@ const LoginForm = () => {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-
+    console.log(userFormData);
     try {
       const { data } = await login({
         variables: { ...userFormData },
       });
 
-      console.log(data);
       Auth.login(data.login.token);
     } catch (e) {
       console.error(e);
@@ -52,9 +45,11 @@ const LoginForm = () => {
     setUserFormData({
       email: '',
       password: '',
+    });({
+      email: '',
+      password: '',
     });
   };
-
   return (
     <>
       <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
