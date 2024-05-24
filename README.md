@@ -20,7 +20,7 @@ This app is to search book titles and get there image and description. If an use
 - bootstrap
 - vscode, github, heroku
 
-## Screenshots
+## Mockup
 ![book search landing page](./client/src/assets/mockup.png)
 
 
