@@ -3,7 +3,7 @@
 ### Table of Contents
 - [Description](#Description)
 - [Technology](#Technology)
-- [Screenshots](#Screenshots)
+- [Mockup](#Mockup)
 - [Usage](#Usage)
 - [Deployment Links](#Usage)
 - [Contact](#Contact)
